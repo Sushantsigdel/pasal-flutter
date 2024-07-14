@@ -36,6 +36,7 @@ class PTexts {
   static const String orSignInWith = "Or sign in with";
   static const String iAgreeTo = "I agree to";
   static const String termsOfService = "Terms of Service";
+  static const String and = "and";
   static const String privacyPolicy = "Privacy Policy";
   static const String verificationCode = "Verification Code";
   static const String resendEmail = "Resend Email";
