@@ -19,4 +19,46 @@ class PTexts {
   static const String homeAppbarTitle = "Good day for shopping";
   static const String homeAppbarSubtitle =
       "Find your favorite products and enjoy shopping";
+
+// Authentication Form text
+  static const String firstName = "First Name";
+  static const String lastName = "Last Name";
+  static const String email = "Email";
+  static const String password = "Password";
+  static const String newPassword = "New Password";
+  static const String username = "Username";
+  static const String phoneNumber = "Phone Number";
+  static const String rememberMe = "Remember me";
+  static const String forgotPassword = "Forgot Password?";
+  static const String signIn = "Sign In";
+  static const String createAccount = "Create Account";
+  static const String orSignUpWith = "Or sign up with";
+  static const String orSignInWith = "Or sign in with";
+  static const String iAgreeTo = "I agree to";
+  static const String termsOfService = "Terms of Service";
+  static const String privacyPolicy = "Privacy Policy";
+  static const String verificationCode = "Verification Code";
+  static const String resendEmail = "Resend Email";
+  static const String resendEmailIn = "Resend Email in";
+
+// Authentication Headings Text
+  static const String loginTitle = "Welcome back!";
+  static const String loginSubtitle =
+      "Discover Limitless Choices and Unmatched Conveninence.";
+  static const String signUpTitle = "Create an account";
+  static const String forgetPasswordTitle = "Forgot Password?";
+  static const String forgetPasswordSubtitle =
+      "Enter your email to reset your password";
+  static const String changePasswordTitle = "Password Reset Email Sent";
+  static const String changePasswordSubtitle =
+      "Your Account Security is our top priority! Please check your email to reset your password";
+  static const String confirmEmail = "Verify your email address!";
+  static const String confirmEmailSubtitle =
+      "Congratulations! Your account Awaits: Verify your email address to get  started and Experience a world of Unrivaled Deals and Personalized Offers";
+  static const String emailNotReceivedMessage =
+      "Didn't receive the email? Check your junk/spam or resend it.";
+  static const String yourAccountCreatedTitle =
+      "Your Account has been created successfully!";
+  static const String yourAccountCreatedSubtitle =
+      "Welcome to the Ultimate Shopping Destination! Your account has been created successfully. Unleash the Joy of Seamless Online Shopping Experience!";
 }
