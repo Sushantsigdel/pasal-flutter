@@ -3,10 +3,10 @@ import 'package:get/get.dart';
 import 'package:pasal/features/authentication/controllers/onboarding_controller.dart';
 import 'package:pasal/utils/constants/image_strings.dart';
 import 'package:pasal/utils/constants/text_strings.dart';
-import 'package:pasal/features/authentication/screens/widgets/onboarding_skip.dart';
-import 'package:pasal/features/authentication/screens/widgets/onboarding_page.dart';
-import 'package:pasal/features/authentication/screens/widgets/onboarding_dot_navigation.dart';
-import 'package:pasal/features/authentication/screens/widgets/onboarding_next_button.dart';
+import 'package:pasal/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
+import 'package:pasal/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
+import 'package:pasal/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
+import 'package:pasal/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
