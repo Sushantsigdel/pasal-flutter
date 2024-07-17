@@ -39,6 +39,7 @@ class PTexts {
   static const String and = "and";
   static const String privacyPolicy = "Privacy Policy";
   static const String verificationCode = "Verification Code";
+  static const String pContinue = "Continue";
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend Email in";
 

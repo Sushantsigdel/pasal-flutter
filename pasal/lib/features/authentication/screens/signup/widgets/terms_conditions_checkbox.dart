@@ -21,7 +21,7 @@ class PTermsAndConditionCheckbox extends StatelessWidget {
         Text.rich(TextSpan(
           children: [
             TextSpan(
-                text: '${PTexts.iAgreeTo}',
+                text: PTexts.iAgreeTo,
                 style: Theme.of(context).textTheme.bodySmall),
             TextSpan(
                 text: '${PTexts.termsOfService} ',
@@ -34,7 +34,7 @@ class PTermsAndConditionCheckbox extends StatelessWidget {
                 text: '${PTexts.and} ',
                 style: Theme.of(context).textTheme.bodySmall),
             TextSpan(
-                text: '${PTexts.privacyPolicy}',
+                text: PTexts.privacyPolicy,
                 style: Theme.of(context).textTheme.bodyMedium!.apply(
                     color: dark ? PColors.white : PColors.primaryColor,
                     decoration: TextDecoration.underline,

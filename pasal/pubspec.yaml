@@ -49,6 +49,7 @@ assets:
   - assets/fonts/
   - assets/logos/
   - assets/images/on_boarding_images
+  - assets/images/animations
 
 fonts:
   - family: Poppins
