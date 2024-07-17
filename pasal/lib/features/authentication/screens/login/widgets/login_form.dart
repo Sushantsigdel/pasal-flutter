@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:pasal/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:pasal/features/authentication/screens/signup/signup.dart';
 import 'package:pasal/utils/constants/sizes.dart';
 import 'package:pasal/utils/constants/text_strings.dart';
@@ -34,19 +35,21 @@ class PLoginForm extends StatelessWidget {
               ),
             ),
             const SizedBox(height: PSizes.spaceBtnInputFields / 2),
-            // Remember me and Forgot Password
 
+            // Remember me and Forgot Password
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                // Remember me
                 Row(
                   children: [
                     Checkbox(value: true, onChanged: (value) {}),
                     const Text(PTexts.rememberMe),
                   ],
                 ),
+                // Forgot Password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => const ForgetPassword()),
                   child: const Text(PTexts.forgotPassword),
                 ),
               ],
