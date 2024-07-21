@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pasal/features/authentication/screens/onboarding/onboarding.dart';
 import 'package:pasal/utils/theme/theme.dart';
 //  using this class to setup themes, initial Bindings, any animations, or any other initial setup
 
@@ -12,14 +13,7 @@ class App extends StatelessWidget {
       theme: PAppTheme.lightTheme,
       darkTheme: PAppTheme.darkTheme,
       // initialBinding: GeneralBindings(),
-      home: const Scaffold(
-        body: Center(
-          child: Text(
-            'Project Structure is set up and running.',
-            textAlign: TextAlign.center,
-          ),
-        ),
-      ),
+      home: const OnBoardingScreen(),
     );
   }
 }
