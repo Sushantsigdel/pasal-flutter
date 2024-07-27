@@ -12,7 +12,6 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: PAppTheme.lightTheme,
       darkTheme: PAppTheme.darkTheme,
-      // initialBinding: GeneralBindings(),
       home: const OnBoardingScreen(),
     );
   }
