@@ -20,7 +20,7 @@ class PSignupForm extends StatelessWidget {
                 child: TextFormField(
                   expands: false,
                   decoration: const InputDecoration(
-                      labelText: 'TTexts.firstName',
+                      labelText: PTexts.firstName,
                       prefixIcon: Icon(Iconsax.user)),
                 ),
               ),
@@ -29,34 +29,37 @@ class PSignupForm extends StatelessWidget {
                 child: TextFormField(
                   expands: false,
                   decoration: const InputDecoration(
-                      labelText: 'TTexts.lastName',
+                      labelText: PTexts.lastName,
                       prefixIcon: Icon(Iconsax.user)),
                 ),
               )
             ],
           ),
 
+          const SizedBox(height: PSizes.spaceBtnInputFields),
+
           // Username
           TextFormField(
             expands: false,
             decoration: const InputDecoration(
-                labelText: 'TTexts.username',
+                labelText: PTexts.username,
                 prefixIcon: Icon(Iconsax.user_edit)),
           ),
+          const SizedBox(height: PSizes.spaceBtnInputFields),
 
           // Email
           TextFormField(
             expands: false,
             decoration: const InputDecoration(
-                labelText: 'TTexts.email', prefixIcon: Icon(Iconsax.direct)),
+                labelText: PTexts.email, prefixIcon: Icon(Iconsax.direct)),
           ),
+          const SizedBox(height: PSizes.spaceBtnInputFields),
 
           // Phone Number
           TextFormField(
             expands: false,
             decoration: const InputDecoration(
-                labelText: 'TTexts.phoneNumber',
-                prefixIcon: Icon(Iconsax.call)),
+                labelText: PTexts.phoneNumber, prefixIcon: Icon(Iconsax.call)),
           ),
           const SizedBox(height: PSizes.spaceBtnInputFields),
 
@@ -64,7 +67,7 @@ class PSignupForm extends StatelessWidget {
           TextFormField(
             expands: false,
             decoration: const InputDecoration(
-                labelText: 'TTexts.password',
+                labelText: PTexts.password,
                 prefixIcon: Icon(Iconsax.password_check),
                 suffixIcon: Icon(Iconsax.eye_slash)),
           ),

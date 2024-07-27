@@ -31,9 +31,6 @@ dependencies:
 
 
 # Product Specific
-
-
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -48,8 +45,8 @@ assets:
   - assets/images/
   - assets/fonts/
   - assets/logos/
-  - assets/images/on_boarding_images
-  - assets/images/animations
+  - assets/images/on_boarding_images/
+  - assets/images/animations/
 
 fonts:
   - family: Poppins

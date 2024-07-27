@@ -2,8 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class PHttpHelper {
-  static const String _baseUrl =
-      'https://api.pasal.com.np'; // test API base URL
+  static const String _baseUrl = ''; // test API base URL
 
 // Helper method to make a GET request
   static Future<Map<String, dynamic>> getRequest(String endpoint) async {
