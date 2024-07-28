@@ -17,8 +17,7 @@ class PTexts {
 
 // home
   static const String homeAppbarTitle = "Good day for shopping";
-  static const String homeAppbarSubtitle =
-      "Find your favorite products and enjoy shopping";
+  static const String homeAppbarSubtitle = "Sushant Sigdel";
 
 // Authentication Form text
   static const String firstName = "First Name";
