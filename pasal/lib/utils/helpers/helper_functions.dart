@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
@@ -106,9 +105,10 @@ class PHelperFunctions {
   }
 
   static List<Widget> wrapWidgets(List<Widget> widgets, int rowSize) {
-   final wrappedList = <Widget>[];
+    final wrappedList = <Widget>[];
     for (var i = 0; i < widgets.length; i += rowSize) {
-      final rowChildren = widgets.sublist(i += rowSize > widgets.length ? widgets.length : i + rowSize);
+      final rowChildren = widgets.sublist(
+          i += rowSize > widgets.length ? widgets.length : i + rowSize);
       wrappedList.add(Row(
         children: rowChildren,
       ));

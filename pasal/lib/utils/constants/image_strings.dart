@@ -2,12 +2,12 @@
 
 // App logos
 class PImages {
-  static const String darkAppLogo = "assets/images/pasal-logo-dark.png";
-  static const String lightAppLogo = "assets/images/pasal-logo-light.png";
+  static const String darkAppLogo = "assets/logos/logo-dark.png";
+  static const String lightAppLogo = "assets/logos/logo-light.png";
 
 // Social icons
-  static const String google = "assets/images/google-icon.png";
-  static const String facebook = "assets/images/facebook-icon.png";
+  static const String google = "assets/logos/google-icon.png";
+  static const String facebook = "assets/logos/facebook-icon.png";
 
   // OnBoarding Images
   static const String onBoardingImage1 =

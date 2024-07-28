@@ -4,10 +4,10 @@ flutter_native_splash:
   image: assets/logos/logo-dark.png
   image_dark: assets/logos/logo.png
 
-android_12:
-  color: "#ffffff"
-  color_dark: "#272727"
-  image: assets/logos/logo-dark.png
-  image_dark: assets/logos/logo.png
+  android_12:
+    color: "#ffffff"
+    color_dark: "#272727"
+    image: assets/logos/logo-dark.png
+    image_dark: assets/logos/logo.png
 
-web: false
+  web: false

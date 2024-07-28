@@ -23,10 +23,10 @@ class SignUpScreen extends StatelessWidget {
               Text(PTexts.signUpTitle,
                   style: Theme.of(context).textTheme.headlineMedium),
 
-              const SizedBox(height: PSizes.spaceBtnInputFields),
+              const SizedBox(height: PSizes.spaceBtnSections),
               // form
               const PSignupForm(),
-
+              const SizedBox(height: PSizes.spaceBtnSections),
               // Dividers
               PFormDivider(dividerText: PTexts.orSignUpWith.capitalize!),
               const SizedBox(height: PSizes.spaceBtnSections),
