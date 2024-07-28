@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pasal/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:pasal/features/authentication/screens/signup/signup.dart';
+import 'package:pasal/navigation_menu.dart';
 import 'package:pasal/utils/constants/sizes.dart';
 import 'package:pasal/utils/constants/text_strings.dart';
 import 'package:iconsax/iconsax.dart';
@@ -59,7 +60,7 @@ class PLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => const NavigationMenu()),
                 child: const Text(PTexts.signIn),
               ),
             ),
