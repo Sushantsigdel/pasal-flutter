@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pasal/common/widgets.login_signup/form_divider.dart';
-import 'package:pasal/common/widgets.login_signup/social_buttons.dart';
+import 'package:pasal/common/widgets/login_signup/form_divider.dart';
+import 'package:pasal/common/widgets/login_signup/social_buttons.dart';
 import 'package:pasal/features/authentication/screens/signup/widgets/signup_form.dart';
 import 'package:pasal/utils/constants/sizes.dart';
 import 'package:pasal/utils/constants/text_strings.dart';
