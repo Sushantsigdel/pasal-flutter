@@ -12,38 +12,44 @@ class PSearchContainer extends StatelessWidget {
     this.icon = Iconsax.search_normal,
     this.showBackground = true,
     this.showBorder = true,
+    this.onTap,
   });
 
   final String text;
   final IconData? icon;
   final bool showBackground, showBorder;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
     final dark = PHelperFunctions.isDarkMode(context);
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: PSizes.defaultSpace),
-      child: Container(
-        width: PDeviceUtils.getScreenWidth(context),
-        padding: const EdgeInsets.all(PSizes.md),
-        decoration: BoxDecoration(
-          color: showBackground
-              ? dark
-                  ? PColors.dark
-                  : PColors.light
-              : Colors.transparent,
-          borderRadius: BorderRadius.circular(PSizes.cardRadiusLg),
-          border: showBorder ? Border.all(color: PColors.grey) : null,
-        ),
-        child: Row(
-          children: [
-            Icon(icon, color: PColors.darkerGrey),
-            const SizedBox(width: PSizes.spaceBtnItems),
-            Text(
-              text,
-              style: Theme.of(context).textTheme.bodySmall,
-            ),
-          ],
+
+    return GestureDetector(
+      onTap: onTap,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: PSizes.defaultSpace),
+        child: Container(
+          width: PDeviceUtils.getScreenWidth(context),
+          padding: const EdgeInsets.all(PSizes.md),
+          decoration: BoxDecoration(
+            color: showBackground
+                ? dark
+                    ? PColors.dark
+                    : PColors.light
+                : Colors.transparent,
+            borderRadius: BorderRadius.circular(PSizes.cardRadiusLg),
+            border: showBorder ? Border.all(color: PColors.grey) : null,
+          ),
+          child: Row(
+            children: [
+              Icon(icon, color: PColors.darkerGrey),
+              const SizedBox(width: PSizes.spaceBtnItems),
+              Text(
+                text,
+                style: Theme.of(context).textTheme.bodySmall,
+              ),
+            ],
+          ),
         ),
       ),
     );
