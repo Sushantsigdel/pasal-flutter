@@ -29,7 +29,7 @@ class ForgetPassword extends StatelessWidget {
               style: Theme.of(context).textTheme.labelMedium,
             ),
 
-            const SizedBox(height: PSizes.spaceBtnSections * 2),
+            const SizedBox(height: PSizes.spaceBtnSections),
 
             // text fields
             TextFormField(
@@ -39,6 +39,7 @@ class ForgetPassword extends StatelessWidget {
               ),
             ),
 
+            const SizedBox(height: PSizes.spaceBtnSections),
             // submit button
             SizedBox(
                 width: double.infinity,

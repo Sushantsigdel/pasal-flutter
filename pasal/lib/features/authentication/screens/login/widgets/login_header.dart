@@ -14,7 +14,7 @@ class PLoginHeader extends StatelessWidget {
     final dark = PHelperFunctions.isDarkMode(context);
     return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       Image(
-        height: 150,
+        height: 120,
         image: AssetImage(dark ? PImages.lightAppLogo : PImages.darkAppLogo),
       ),
       Text(PTexts.loginTitle,

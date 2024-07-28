@@ -56,10 +56,14 @@ class PLoginForm extends StatelessWidget {
             ),
             const SizedBox(height: PSizes.spaceBtnSections),
             // Sign In Button
-            ElevatedButton(
-              onPressed: () {},
-              child: const Text(PTexts.signIn),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {},
+                child: const Text(PTexts.signIn),
+              ),
             ),
+
             const SizedBox(height: PSizes.spaceBtnItems),
 
             // Create Account

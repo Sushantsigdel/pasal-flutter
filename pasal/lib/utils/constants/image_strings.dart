@@ -3,7 +3,7 @@
 // App logos
 class PImages {
   static const String darkAppLogo = "assets/logos/logo-dark.png";
-  static const String lightAppLogo = "assets/logos/logo-light.png";
+  static const String lightAppLogo = "assets/logos/logo.png";
 
 // Social icons
   static const String google = "assets/logos/google-icon.png";
