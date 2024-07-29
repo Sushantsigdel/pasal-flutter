@@ -4,6 +4,7 @@ import 'package:pasal/common/styles/shadows.dart';
 import 'package:pasal/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:pasal/common/widgets/icons/p_circular_icon.dart';
 import 'package:pasal/common/widgets/images/p_rounded_image.dart';
+import 'package:pasal/common/widgets/texts/product_title_text.dart';
 import 'package:pasal/utils/constants/colors.dart';
 import 'package:pasal/utils/constants/image_strings.dart';
 import 'package:pasal/utils/constants/sizes.dart';
@@ -17,58 +18,111 @@ class PProductCardVertical extends StatelessWidget {
     final dark = PHelperFunctions.isDarkMode(context);
 
     // Container with side paddings, colors,edges, radius and shadow
-    return Container(
-      width: 180,
-      padding: const EdgeInsets.all(1),
-      decoration: BoxDecoration(
-        boxShadow: [PShadowStyle.verticalProductShadow],
-        borderRadius: BorderRadius.circular(PSizes.productImageRadius),
-        color: dark ? PColors.darkGrey : PColors.white,
-      ),
-      child: Column(
-        children: [
-          // Thumbnail, Wishlist, Discount Tag
-          PCircularContainer(
-            height: 180,
-            padding: const EdgeInsets.all(PSizes.sm),
-            backgroundColor: dark ? PColors.dark : PColors.light,
-            child: Stack(
-              children: [
-                // Thumbnail Image
-                const PRoundedImage(
-                    imageUrl: PImages.productImage1, applyImageRadius: true),
+    return GestureDetector(
+      onTap: () {},
+      child: Container(
+        width: 180,
+        padding: const EdgeInsets.all(1),
+        decoration: BoxDecoration(
+          boxShadow: [PShadowStyle.verticalProductShadow],
+          borderRadius: BorderRadius.circular(PSizes.productImageRadius),
+          color: dark ? PColors.darkGrey : PColors.white,
+        ),
+        child: Column(
+          children: [
+            // Thumbnail, Wishlist, Discount Tag
+            PCircularContainer(
+              height: 180,
+              padding: const EdgeInsets.all(PSizes.sm),
+              backgroundColor: dark ? PColors.dark : PColors.light,
+              child: Stack(
+                children: [
+                  // Thumbnail Image
+                  const PRoundedImage(
+                      imageUrl: PImages.productImage1, applyImageRadius: true),
 
-                // Sale tag
-                Positioned(
-                  top: 12,
-                  child: PCircularContainer(
-                    radius: PSizes.sm,
-                    backgroundColor: PColors.secondaryColor.withOpacity(0.8),
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: PSizes.sm, vertical: PSizes.xs),
-                    child: Text('25%',
-                        style: Theme.of(context)
-                            .textTheme
-                            .labelLarge!
-                            .apply(color: PColors.black)),
+                  // Sale tag
+                  Positioned(
+                    top: 12,
+                    child: PCircularContainer(
+                      radius: PSizes.sm,
+                      backgroundColor: PColors.secondaryColor.withOpacity(0.8),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: PSizes.sm, vertical: PSizes.xs),
+                      child: Text('25%',
+                          style: Theme.of(context)
+                              .textTheme
+                              .labelLarge!
+                              .apply(color: PColors.black)),
+                    ),
                   ),
-                ),
 
-                // Favorite icon
-                const Positioned(
-                  top: 0,
-                  right: 0,
-                  child: PCircularIcon(
-                    icon: Iconsax.heart5,
-                    color: Colors.red,
-                  ),
-                )
-              ],
+                  // Favorite icon
+                  const Positioned(
+                    top: 0,
+                    right: 0,
+                    child: PCircularIcon(
+                      icon: Iconsax.heart5,
+                      color: Colors.red,
+                    ),
+                  )
+                ],
+              ),
             ),
-          ),
+            const SizedBox(height: PSizes.spaceBtnItems / 2),
 
-          // Details
-        ],
+            // Details
+            Padding(
+              padding: const EdgeInsets.only(left: PSizes.sm),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const PProductTitleText(
+                      title: 'Green Nike Air', smallsize: true),
+                  const SizedBox(height: PSizes.spaceBtnItems / 2),
+                  Row(
+                    children: [
+                      Text('Nike',
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 1,
+                          style: Theme.of(context).textTheme.labelMedium),
+                      const SizedBox(width: PSizes.xs),
+                      const Icon(Iconsax.verify5,
+                          color: PColors.primaryColor, size: PSizes.iconXs),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      // Price
+                      Text(
+                        '\$40.5',
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: Theme.of(context).textTheme.headlineMedium,
+                      ),
+                      Container(
+                        decoration: const BoxDecoration(
+                            color: PColors.dark,
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(PSizes.cardRadiusMd),
+                              bottomRight:
+                                  Radius.circular(PSizes.productImageRadius),
+                            )),
+                        child: const SizedBox(
+                            width: PSizes.iconLg * 1.2,
+                            height: PSizes.iconLg * 1.2,
+                            child: Center(
+                                child:
+                                    Icon(Iconsax.add, color: PColors.white))),
+                      )
+                    ],
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
