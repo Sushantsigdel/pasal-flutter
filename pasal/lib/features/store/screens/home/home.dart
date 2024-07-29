@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pasal/common/widgets/Products/product_cards/product_card_vertical.dart';
 import 'package:pasal/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:pasal/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:pasal/features/store/screens/home/widgets/home_appbar.dart';
@@ -35,11 +36,18 @@ class HomeScreen extends StatelessWidget {
 
             Padding(
               padding: EdgeInsets.all(PSizes.defaultSpace),
-              child: PPromoSlider(
-                banners: [
-                  PImages.promoBanner1,
-                  PImages.promoBanner2,
-                  PImages.promoBanner3,
+              child: Column(
+                children: [
+                  // Promo Slider
+                  PPromoSlider(banners: [
+                    PImages.promoBanner1,
+                    PImages.promoBanner2,
+                    PImages.promoBanner3
+                  ]),
+                  SizedBox(height: PSizes.spaceBtnSections),
+
+                  // Popular Products
+                  PProductCardVertical(),
                 ],
               ),
             ),
