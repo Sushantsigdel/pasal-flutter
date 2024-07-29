@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pasal/common/widgets/custom_shapes/containers/circular_container.dart';
+import 'package:pasal/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:pasal/common/widgets/images/p_rounded_image.dart';
 import 'package:pasal/features/shop/screens/store/controllers/home_controller.dart';
 import 'package:pasal/utils/constants/colors.dart';
@@ -34,7 +34,7 @@ class PPromoSlider extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 for (int i = 0; i < banners.length; i++)
-                  PCircularContainer(
+                  PRoundedContainer(
                       width: 20,
                       height: 4,
                       margin: const EdgeInsets.only(right: 10),

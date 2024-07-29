@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:pasal/utils/constants/colors.dart';
 import 'package:pasal/utils/constants/sizes.dart';
 
-class PCircularContainer extends StatelessWidget {
-  const PCircularContainer({
+class PRoundedContainer extends StatelessWidget {
+  const PRoundedContainer({
     super.key,
     this.child,
     this.width,

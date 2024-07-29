@@ -20,11 +20,11 @@ class PGridLayout extends StatelessWidget {
       shrinkWrap: true,
       padding: EdgeInsets.zero,
       physics: const NeverScrollableScrollPhysics(),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         mainAxisSpacing: PSizes.gridViewSpacing,
         crossAxisSpacing: PSizes.gridViewSpacing,
-        mainAxisExtent: 288,
+        mainAxisExtent: mainAxisExtent, // Remove the 'const' keyword
       ),
       itemBuilder: itemBuilder,
     );

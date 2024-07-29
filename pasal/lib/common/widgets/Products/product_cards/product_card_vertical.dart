@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:pasal/common/styles/shadows.dart';
-import 'package:pasal/common/widgets/custom_shapes/containers/circular_container.dart';
+import 'package:pasal/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:pasal/common/widgets/icons/p_circular_icon.dart';
 import 'package:pasal/common/widgets/images/p_rounded_image.dart';
+import 'package:pasal/common/widgets/texts/p_brand_title_text_with_verified_icon.dart';
 import 'package:pasal/common/widgets/texts/product_price_text.dart';
 import 'package:pasal/common/widgets/texts/product_title_text.dart';
 import 'package:pasal/utils/constants/colors.dart';
@@ -32,7 +33,7 @@ class PProductCardVertical extends StatelessWidget {
         child: Column(
           children: [
             // Thumbnail, Wishlist, Discount Tag
-            PCircularContainer(
+            PRoundedContainer(
               height: 180,
               padding: const EdgeInsets.all(PSizes.sm),
               backgroundColor: dark ? PColors.dark : PColors.light,
@@ -45,7 +46,7 @@ class PProductCardVertical extends StatelessWidget {
                   // Sale tag
                   Positioned(
                     top: 12,
-                    child: PCircularContainer(
+                    child: PRoundedContainer(
                       radius: PSizes.sm,
                       backgroundColor: PColors.secondaryColor.withOpacity(0.8),
                       padding: const EdgeInsets.symmetric(
@@ -73,25 +74,16 @@ class PProductCardVertical extends StatelessWidget {
             const SizedBox(height: PSizes.spaceBtnItems / 2),
 
             // Details
-            Padding(
-              padding: const EdgeInsets.only(left: PSizes.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: PSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const PProductTitleText(
-                      title: 'Green Nike Air', smallsize: true),
-                  const SizedBox(height: PSizes.spaceBtnItems / 2),
-                  Row(
-                    children: [
-                      Text('Nike',
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 1,
-                          style: Theme.of(context).textTheme.labelMedium),
-                      const SizedBox(width: PSizes.xs),
-                      const Icon(Iconsax.verify5,
-                          color: PColors.primaryColor, size: PSizes.iconXs),
-                    ],
-                  ),
+                  PProductTitleText(title: 'Green Nike Air', smallsize: true),
+                  SizedBox(height: PSizes.spaceBtnItems / 2),
+                  PBrandTitleWithVerifiedIcon(
+                    title: 'Nike',
+                  )
                 ],
               ),
             ),
