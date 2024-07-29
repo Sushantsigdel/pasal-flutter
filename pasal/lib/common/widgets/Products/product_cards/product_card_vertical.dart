@@ -4,6 +4,7 @@ import 'package:pasal/common/styles/shadows.dart';
 import 'package:pasal/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:pasal/common/widgets/icons/p_circular_icon.dart';
 import 'package:pasal/common/widgets/images/p_rounded_image.dart';
+import 'package:pasal/common/widgets/texts/product_price_text.dart';
 import 'package:pasal/common/widgets/texts/product_title_text.dart';
 import 'package:pasal/utils/constants/colors.dart';
 import 'package:pasal/utils/constants/image_strings.dart';
@@ -95,12 +96,7 @@ class PProductCardVertical extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       // Price
-                      Text(
-                        '\$40.5',
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.headlineMedium,
-                      ),
+                      const PProductPriceText(price: '40.5'),
                       Container(
                         decoration: const BoxDecoration(
                             color: PColors.dark,

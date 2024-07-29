@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pasal/common/widgets/Products/product_cards/product_card_vertical.dart';
 import 'package:pasal/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:pasal/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:pasal/common/widgets/layouts/grid_layout.dart';
 import 'package:pasal/features/store/screens/home/widgets/home_appbar.dart';
 import 'package:pasal/features/store/screens/home/widgets/home_categories.dart';
 import 'package:pasal/features/store/screens/home/widgets/promo_slider.dart';
@@ -13,12 +14,12 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             // Header
-            PPrimaryHeaderContainer(
+            const PPrimaryHeaderContainer(
                 child: Column(
               children: [
                 // Appbar
@@ -35,19 +36,21 @@ class HomeScreen extends StatelessWidget {
             )),
 
             Padding(
-              padding: EdgeInsets.all(PSizes.defaultSpace),
+              padding: const EdgeInsets.all(PSizes.defaultSpace),
               child: Column(
                 children: [
                   // Promo Slider
-                  PPromoSlider(banners: [
+                  const PPromoSlider(banners: [
                     PImages.promoBanner1,
                     PImages.promoBanner2,
                     PImages.promoBanner3
                   ]),
-                  SizedBox(height: PSizes.spaceBtnSections),
+                  const SizedBox(height: PSizes.spaceBtnSections),
 
                   // Popular Products
-                  PProductCardVertical(),
+                  PGridLayout(
+                      itemCount: 4,
+                      itemBuilder: (_, index) => const PProductCardVertical())
                 ],
               ),
             ),
