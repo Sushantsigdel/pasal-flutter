@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pasal/common/widgets/image_text_widgets/vertical_image_text.dart';
 import 'package:pasal/common/widgets/texts/section_heading.dart';
+import 'package:pasal/utils/constants/colors.dart';
 import 'package:pasal/utils/constants/image_strings.dart';
 import 'package:pasal/utils/constants/sizes.dart';
 
@@ -17,6 +18,7 @@ class PHomeCategories extends StatelessWidget {
           children: [
             const PSectionHeading(
               title: 'Popular Categories',
+              textColor: PColors.white,
               showActionButton: false,
             ),
             const SizedBox(height: PSizes.spaceBtnItems),

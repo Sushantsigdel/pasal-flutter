@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pasal/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:pasal/common/widgets/images/p_rounded_image.dart';
-import 'package:pasal/features/store/screens/shop/controllers/home_controller.dart';
+import 'package:pasal/features/shop/screens/store/controllers/home_controller.dart';
 import 'package:pasal/utils/constants/colors.dart';
 import 'package:pasal/utils/constants/sizes.dart';
 

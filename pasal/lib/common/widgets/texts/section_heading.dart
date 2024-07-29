@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:pasal/utils/constants/colors.dart';
 
 class PSectionHeading extends StatelessWidget {
   const PSectionHeading(
       {super.key,
-      this.textColor = PColors.white,
+      this.textColor,
       this.showActionButton = true,
       required this.title,
       this.buttonTitle = 'View All',

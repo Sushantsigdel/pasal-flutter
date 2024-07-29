@@ -6,10 +6,10 @@ class PCartCounterIcon extends StatelessWidget {
   const PCartCounterIcon({
     super.key,
     required this.onPressed,
-    required this.iconColor,
+    this.iconColor,
   });
 
-  final Color iconColor;
+  final Color? iconColor;
   final VoidCallback onPressed;
 
   @override
