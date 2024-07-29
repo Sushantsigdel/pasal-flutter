@@ -3,6 +3,7 @@ import 'package:pasal/common/widgets/Products/product_cards/product_card_vertica
 import 'package:pasal/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:pasal/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:pasal/common/widgets/layouts/grid_layout.dart';
+import 'package:pasal/common/widgets/texts/section_heading.dart';
 import 'package:pasal/features/store/screens/home/widgets/home_appbar.dart';
 import 'package:pasal/features/store/screens/home/widgets/home_categories.dart';
 import 'package:pasal/features/store/screens/home/widgets/promo_slider.dart';
@@ -46,6 +47,13 @@ class HomeScreen extends StatelessWidget {
                     PImages.promoBanner3
                   ]),
                   const SizedBox(height: PSizes.spaceBtnSections),
+
+                  // Heading
+                  PSectionHeading(
+                    title: 'Popular Products',
+                    onPressed: () {},
+                  ),
+                  const SizedBox(height: PSizes.spaceBtnItems),
 
                   // Popular Products
                   PGridLayout(

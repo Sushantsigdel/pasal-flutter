@@ -92,30 +92,33 @@ class PProductCardVertical extends StatelessWidget {
                           color: PColors.primaryColor, size: PSizes.iconXs),
                     ],
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      // Price
-                      const PProductPriceText(price: '40.5'),
-                      Container(
-                        decoration: const BoxDecoration(
-                            color: PColors.dark,
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(PSizes.cardRadiusMd),
-                              bottomRight:
-                                  Radius.circular(PSizes.productImageRadius),
-                            )),
-                        child: const SizedBox(
-                            width: PSizes.iconLg * 1.2,
-                            height: PSizes.iconLg * 1.2,
-                            child: Center(
-                                child:
-                                    Icon(Iconsax.add, color: PColors.white))),
-                      )
-                    ],
-                  )
                 ],
               ),
+            ),
+            // Todo: Add Spacer() here to keep the height of each box in case 1 or 2 lines of headings
+            const Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                // Price
+                const Padding(
+                  padding: EdgeInsets.only(left: PSizes.sm),
+                  child: PProductPriceText(price: '40.5'),
+                ),
+                Container(
+                  decoration: const BoxDecoration(
+                      color: PColors.dark,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(PSizes.cardRadiusMd),
+                        bottomRight: Radius.circular(PSizes.productImageRadius),
+                      )),
+                  child: const SizedBox(
+                      width: PSizes.iconLg * 1.2,
+                      height: PSizes.iconLg * 1.2,
+                      child: Center(
+                          child: Icon(Iconsax.add, color: PColors.white))),
+                )
+              ],
             )
           ],
         ),
