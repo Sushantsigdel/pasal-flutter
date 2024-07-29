@@ -49,4 +49,12 @@ class PImages {
       "assets/icons/categories/icons8-sparkling-diamond-64.png";
   static const String electronicIcon =
       "assets/icons/categories/icons8-smartphone-64.png";
+
+// Product Images
+  static const String promoBanner1 =
+      "assets/images/products/promo-banner-1.png";
+  static const String promoBanner2 =
+      "assets/images/products/promo-banner-2.png";
+  static const String promoBanner3 =
+      "assets/images/products/promo-banner-3.png";
 }
