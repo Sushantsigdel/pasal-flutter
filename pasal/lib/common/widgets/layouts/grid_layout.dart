@@ -24,7 +24,7 @@ class PGridLayout extends StatelessWidget {
         crossAxisCount: 2,
         mainAxisSpacing: PSizes.gridViewSpacing,
         crossAxisSpacing: PSizes.gridViewSpacing,
-        mainAxisExtent: mainAxisExtent, // Remove the 'const' keyword
+        mainAxisExtent: mainAxisExtent,
       ),
       itemBuilder: itemBuilder,
     );

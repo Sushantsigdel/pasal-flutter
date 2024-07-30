@@ -76,15 +76,18 @@ class PProductCardVertical extends StatelessWidget {
             // Details
             const Padding(
               padding: EdgeInsets.only(left: PSizes.sm),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  PProductTitleText(title: 'Green Nike Air', smallsize: true),
-                  SizedBox(height: PSizes.spaceBtnItems / 2),
-                  PBrandTitleWithVerifiedIcon(
-                    title: 'Nike',
-                  )
-                ],
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    PProductTitleText(title: 'Green Nike Air', smallsize: true),
+                    SizedBox(height: PSizes.spaceBtnItems / 2),
+                    PBrandTitleWithVerifiedIcon(
+                      title: 'Nike',
+                    )
+                  ],
+                ),
               ),
             ),
             // Todo: Add Spacer() here to keep the height of each box in case 1 or 2 lines of headings
