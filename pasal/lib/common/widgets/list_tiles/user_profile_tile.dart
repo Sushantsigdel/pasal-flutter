@@ -7,7 +7,10 @@ import 'package:pasal/utils/constants/image_strings.dart';
 class PUserProfileTile extends StatelessWidget {
   const PUserProfileTile({
     super.key,
+    this.onPressed,
   });
+
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +31,7 @@ class PUserProfileTile extends StatelessWidget {
               .bodyMedium!
               .apply(color: PColors.white)),
       trailing: IconButton(
-        onPressed: () {},
+        onPressed: onPressed,
         icon: const Icon(Iconsax.edit, color: PColors.white),
       ),
     );

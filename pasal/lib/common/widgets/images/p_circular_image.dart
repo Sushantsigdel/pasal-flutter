@@ -36,11 +36,14 @@ class PCircularImage extends StatelessWidget {
             : PColors.white,
         borderRadius: BorderRadius.circular(100),
       ),
-      child: Image(
-        image: isNetworkImage
-            ? NetworkImage(image)
-            : AssetImage(image) as ImageProvider,
-        color: overlayColor,
+      child: Center(
+        child: Image(
+          fit: fit,
+          image: isNetworkImage
+              ? NetworkImage(image)
+              : AssetImage(image) as ImageProvider,
+          color: overlayColor,
+        ),
       ),
     );
   }
