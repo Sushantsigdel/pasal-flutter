@@ -5,19 +5,22 @@ import 'package:pasal/utils/constants/sizes.dart';
 import 'package:pasal/utils/device/device_utlity.dart';
 
 class PAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const PAppBar(
-      {super.key,
-      this.title,
-      this.actions,
-      this.showBackArrow = false,
-      this.leadingIcon,
-      this.leadingOnPressed});
+  const PAppBar({
+    super.key,
+    this.title,
+    this.actions,
+    this.showBackArrow = false,
+    this.leadingIcon,
+    this.leadingOnPressed,
+    this.style,
+  });
 
   final Widget? title;
   final bool showBackArrow;
   final IconData? leadingIcon;
   final List<Widget>? actions;
   final VoidCallback? leadingOnPressed;
+  final TextStyle? style;
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +37,7 @@ class PAppBar extends StatelessWidget implements PreferredSizeWidget {
                     onPressed: leadingOnPressed, icon: Icon(leadingIcon))
                 : null,
         title: title,
+        titleTextStyle: style,
         actions: actions,
       ),
     );

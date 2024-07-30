@@ -32,7 +32,8 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(height: PSizes.spaceBtnSections),
 
                 // Categories
-                PHomeCategories()
+                PHomeCategories(),
+                SizedBox(height: PSizes.spaceBtnSections),
               ],
             )),
 

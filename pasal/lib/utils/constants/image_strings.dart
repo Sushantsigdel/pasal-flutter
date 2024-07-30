@@ -83,4 +83,7 @@ class PImages {
       "assets/images/products/samsung_s9_mobile_withback.png";
   static const String productImage13 =
       "assets/images/products/samsung_s9_mobile_back.png";
+
+  // User Profile Image
+  static const String user = "assets/images/user/user.png";
 }
