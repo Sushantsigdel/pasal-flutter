@@ -76,8 +76,8 @@ class PProductCardVertical extends StatelessWidget {
             // Details
             const Padding(
               padding: EdgeInsets.only(left: PSizes.sm),
-              child: Align(
-                alignment: Alignment.centerLeft,
+              child: SizedBox(
+                width: double.infinity,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -100,13 +100,16 @@ class PProductCardVertical extends StatelessWidget {
                   padding: EdgeInsets.only(left: PSizes.sm),
                   child: PProductPriceText(price: '40.5'),
                 ),
+
+                // Add to cart
                 Container(
                   decoration: const BoxDecoration(
-                      color: PColors.dark,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(PSizes.cardRadiusMd),
-                        bottomRight: Radius.circular(PSizes.productImageRadius),
-                      )),
+                    color: PColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(PSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(PSizes.productImageRadius),
+                    ),
+                  ),
                   child: const SizedBox(
                       width: PSizes.iconLg * 1.2,
                       height: PSizes.iconLg * 1.2,
