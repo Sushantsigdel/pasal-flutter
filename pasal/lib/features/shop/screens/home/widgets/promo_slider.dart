@@ -40,7 +40,7 @@ class PPromoSlider extends StatelessWidget {
                       margin: const EdgeInsets.only(right: 10),
                       backgroundColor:
                           controller.carousalCurrentIndex.value == i
-                              ? PColors.textPrimary
+                              ? PColors.primaryColor
                               : PColors.grey),
               ],
             ),
