@@ -9,8 +9,8 @@ import 'package:pasal/utils/constants/image_strings.dart';
 import 'package:pasal/utils/constants/sizes.dart';
 import 'package:pasal/utils/helpers/helper_functions.dart';
 
-class PProductImageSlicer extends StatelessWidget {
-  const PProductImageSlicer({
+class PProductImageSlider extends StatelessWidget {
+  const PProductImageSlider({
     super.key,
   });
 

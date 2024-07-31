@@ -14,7 +14,7 @@ class ProductDetailScreen extends StatelessWidget {
         child: Column(
           children: [
             // Product Image Slider
-            PProductImageSlicer(),
+            PProductImageSlider(),
 
             // Product Title and other product details
             Padding(
