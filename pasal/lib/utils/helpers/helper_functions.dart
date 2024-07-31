@@ -8,6 +8,10 @@ class PHelperFunctions {
 
     if (value == 'Green') {
       return Colors.green;
+    } else if (value == 'Blue') {
+      return Colors.blue;
+    } else if (value == 'Yellow') {
+      return Colors.yellow;
     } else if (value == 'Red') {
       return Colors.red;
     } else if (value == 'Pink') {
