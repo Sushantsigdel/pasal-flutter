@@ -23,6 +23,7 @@ dependencies:
 # Icons
   iconsax: ^0.0.8
   cupertino_icons: ^1.0.6
+  flutter_rating_bar: ^4.0.1
 
 
 # State Management
@@ -47,6 +48,7 @@ flutter:
   assets:
     - assets/images/
     - assets/images/user/
+    - assets/images/reviews/
     - assets/fonts/
     - assets/logos/
     - assets/images/on_boarding_images/

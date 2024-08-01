@@ -58,6 +58,17 @@ class PImages {
   static const String promoBanner3 =
       "assets/images/products/promo-banner-3.png";
 
+  // User Profile Image
+  static const String user = "assets/images/user/user.png";
+
+  // Product Images
+  static const String userProfileImage1 =
+      "assets/images/reviews/review_profile_image_1.jpg";
+  static const String userProfileImage2 =
+      "assets/images/reviews/review_profile_image_2.jpg";
+  static const String userProfileImage3 =
+      "assets/images/reviews/review_profile_image_3 .jpg";
+
 // Product Images
   static const String productImage1 = "assets/images/products/nike-shoes.png";
   static const String productImage2 = "assets/images/products/product-1.png";
@@ -83,7 +94,4 @@ class PImages {
       "assets/images/products/samsung_s9_mobile_withback.png";
   static const String productImage13 =
       "assets/images/products/samsung_s9_mobile_back.png";
-
-  // User Profile Image
-  static const String user = "assets/images/user/user.png";
 }

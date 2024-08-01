@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:pasal/common/widgets/texts/section_heading.dart';
 import 'package:pasal/features/shop/screens/product_details/widgets/product_attributes.dart';
@@ -6,6 +7,7 @@ import 'package:pasal/features/shop/screens/product_details/widgets/product_deta
 import 'package:pasal/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:pasal/features/shop/screens/product_details/widgets/rating_share_widget.dart';
 import 'package:pasal/features/shop/screens/product_details/widgets/bottom_add_to_cart_widget.dart';
+import 'package:pasal/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:pasal/utils/constants/sizes.dart';
 import 'package:readmore/readmore.dart';
 
@@ -78,11 +80,11 @@ class ProductDetailScreen extends StatelessWidget {
                       ),
                       IconButton(
                         icon: const Icon(Iconsax.arrow_right_3, size: 18),
-                        onPressed: () {},
+                        onPressed: () => Get.to(const ProductReviewsScreen()),
                       )
                     ],
                   ),
-                  const SizedBox(height: PSizes.spaceBtnSections),
+                  const SizedBox(height: PSizes.spaceBtnItems),
                 ],
               ),
             )
