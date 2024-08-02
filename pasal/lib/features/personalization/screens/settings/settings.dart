@@ -6,6 +6,7 @@ import 'package:pasal/common/widgets/custom_shapes/containers/primary_header_con
 import 'package:pasal/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:pasal/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:pasal/common/widgets/texts/section_heading.dart';
+import 'package:pasal/features/personalization/screens/address/adress.dart';
 import 'package:pasal/features/personalization/screens/profile/profile.dart';
 import 'package:pasal/utils/constants/colors.dart';
 import 'package:pasal/utils/constants/sizes.dart';
@@ -51,10 +52,12 @@ class SettingScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: PSizes.spaceBtnItems),
 
-                  const PSettingsMenuTile(
-                      icon: Iconsax.safe_home,
-                      title: 'My Addresses',
-                      subTitle: 'Set shopping addresses'),
+                  PSettingsMenuTile(
+                    icon: Iconsax.safe_home,
+                    title: 'My Addresses',
+                    subTitle: 'Set shopping addresses',
+                    onTap: () => Get.to(() => const UserAddressScreen()),
+                  ),
 
                   const PSettingsMenuTile(
                       icon: Iconsax.shopping_cart,

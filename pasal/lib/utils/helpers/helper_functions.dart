@@ -104,7 +104,7 @@ class PHelperFunctions {
   }
 
   static String getFormattedDate(DateTime date,
-      {String format = 'dd MM yyyy'}) {
+      {String format = 'MM dd yyyy'}) {
     return DateFormat(format).format(date);
   }
 

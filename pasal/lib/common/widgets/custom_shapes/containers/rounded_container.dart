@@ -13,7 +13,7 @@ class PRoundedContainer extends StatelessWidget {
     this.margin,
     this.backgroundColor = PColors.white,
     this.showBorder = false,
-    this.borderCOlor = PColors.borderPrimary,
+    this.borderColor = PColors.borderPrimary,
   });
 
   final double? width;
@@ -22,7 +22,7 @@ class PRoundedContainer extends StatelessWidget {
   final EdgeInsetsGeometry? padding;
   final EdgeInsetsGeometry? margin;
   final bool showBorder;
-  final Color borderCOlor;
+  final Color borderColor;
   final Widget? child;
   final Color backgroundColor;
 
@@ -36,7 +36,7 @@ class PRoundedContainer extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
         color: backgroundColor,
-        border: showBorder ? Border.all(color: borderCOlor) : null,
+        border: showBorder ? Border.all(color: borderColor) : null,
       ),
       child: child,
     );

@@ -17,7 +17,7 @@ class PBranadShowcase extends StatelessWidget {
   Widget build(BuildContext context) {
     return PRoundedContainer(
       showBorder: true,
-      borderCOlor: PColors.darkGrey,
+      borderColor: PColors.darkGrey,
       backgroundColor: Colors.transparent,
       padding: const EdgeInsets.only(bottom: PSizes.spaceBtnItems),
       margin: const EdgeInsets.only(bottom: PSizes.spaceBtnItems),
