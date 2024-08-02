@@ -50,7 +50,8 @@ class AddNewAddressScreen extends StatelessWidget {
                   Expanded(
                       child: TextFormField(
                     decoration: const InputDecoration(
-                        prefixIcon: Icon(Iconsax.building), labelText: 'City'),
+                        prefixIcon: Icon(Iconsax.building_34),
+                        labelText: 'City'),
                   )),
                   const SizedBox(width: PSizes.spaceBtnInputFields),
                   Expanded(
