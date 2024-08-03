@@ -57,7 +57,7 @@ class PSingleAddress extends StatelessWidget {
               ),
               const SizedBox(height: PSizes.sm / 2),
               const Text(
-                'Kissan mart road, Gaidakot, Gandaki, 3300, Nepal',
+                'Kissan mart road, 3300, Gaidakot, Gandaki, Nepal',
                 softWrap: true,
               ),
             ],

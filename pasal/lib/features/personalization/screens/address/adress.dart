@@ -18,7 +18,7 @@ class UserAddressScreen extends StatelessWidget {
           onPressed: () => Get.to(() => const AddNewAddressScreen()),
           child: const Icon(Iconsax.add, color: PColors.white)),
       appBar: PAppBar(
-        showBackArrow: false,
+        showBackArrow: true,
         title:
             Text('Addresses', style: Theme.of(context).textTheme.headlineSmall),
       ),
