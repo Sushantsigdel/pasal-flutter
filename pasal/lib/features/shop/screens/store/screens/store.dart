@@ -24,7 +24,12 @@ class StoreScreen extends StatelessWidget {
             'Store',
             style: Theme.of(context).textTheme.headlineMedium,
           ),
-          actions: [PCartCounterIcon(onPressed: () {})],
+          actions: [
+            PCartCounterIcon(
+              onPressed: () {},
+              counterTextColor: PColors.white,
+            )
+          ],
         ),
         body: NestedScrollView(
           headerSliverBuilder: (_, innerBoxIsScrolled) {

@@ -35,6 +35,8 @@ class PHomeAppBar extends StatelessWidget {
         PCartCounterIcon(
           onPressed: () {},
           iconColor: PColors.white,
+          counterBgColor: PColors.black,
+          counterTextColor: PColors.white,
         )
       ],
     );
