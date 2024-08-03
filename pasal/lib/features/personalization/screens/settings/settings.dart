@@ -8,6 +8,8 @@ import 'package:pasal/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:pasal/common/widgets/texts/section_heading.dart';
 import 'package:pasal/features/personalization/screens/address/adress.dart';
 import 'package:pasal/features/personalization/screens/profile/profile.dart';
+import 'package:pasal/features/shop/screens/cart/cart.dart';
+import 'package:pasal/features/shop/screens/order/order.dart';
 import 'package:pasal/utils/constants/colors.dart';
 import 'package:pasal/utils/constants/sizes.dart';
 
@@ -59,15 +61,18 @@ class SettingScreen extends StatelessWidget {
                     onTap: () => Get.to(() => const UserAddressScreen()),
                   ),
 
-                  const PSettingsMenuTile(
+                  PSettingsMenuTile(
                       icon: Iconsax.shopping_cart,
                       title: 'My Cart',
+                      onTap: () => Get.to(() => const CartScreen()),
                       subTitle: 'Add, remove products and move to checkout'),
 
-                  const PSettingsMenuTile(
-                      icon: Iconsax.bag_tick,
-                      title: 'My Orders',
-                      subTitle: 'In-Progress and Completed Orders'),
+                  PSettingsMenuTile(
+                    icon: Iconsax.bag_tick,
+                    title: 'My Orders',
+                    subTitle: 'In-Progress and Completed Orders',
+                    onTap: () => Get.to(() => const OrderScreen()),
+                  ),
 
                   const PSettingsMenuTile(
                       icon: Iconsax.bank,
