@@ -12,14 +12,16 @@ class PBrandCard extends StatelessWidget {
   const PBrandCard({
     super.key,
     this.showBorder = false,
+    this.onTap,
   });
 
   final bool showBorder;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: onTap,
       child: PRoundedContainer(
         padding: const EdgeInsets.all(PSizes.sm),
         showBorder: showBorder,

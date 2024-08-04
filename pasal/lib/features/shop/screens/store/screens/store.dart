@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:pasal/common/widgets/brand/all_brands.dart';
 import 'package:pasal/common/widgets/appbar/appbar.dart';
 import 'package:pasal/common/widgets/appbar/tabbar.dart';
+import 'package:pasal/common/widgets/brand/brand_products.dart';
 import 'package:pasal/common/widgets/brands/brand_cards.dart';
 import 'package:pasal/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:pasal/common/widgets/layouts/grid_layout.dart';
 import 'package:pasal/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:pasal/common/widgets/texts/section_heading.dart';
+import 'package:pasal/features/shop/screens/cart/cart.dart';
 import 'package:pasal/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:pasal/utils/constants/colors.dart';
 import 'package:pasal/utils/constants/sizes.dart';
@@ -26,7 +30,7 @@ class StoreScreen extends StatelessWidget {
           ),
           actions: [
             PCartCounterIcon(
-              onPressed: () {},
+              onPressed: () => Get.to(() => const CartScreen()),
               counterTextColor: PColors.white,
             )
           ],
@@ -61,14 +65,18 @@ class StoreScreen extends StatelessWidget {
                       PSectionHeading(
                           title: 'Featured Brands',
                           showActionButton: true,
-                          onPressed: () {}),
+                          onPressed: () =>
+                              Get.to(() => const AllBrandsScreen())),
                       const SizedBox(height: PSizes.spaceBtnItems / 1.5),
 
                       PGridLayout(
                           itemCount: 4,
                           mainAxisExtent: 80,
                           itemBuilder: (_, index) {
-                            return const PBrandCard(showBorder: true);
+                            return PBrandCard(
+                              showBorder: true,
+                              onTap: () => Get.to(() => const BrandProducts()),
+                            );
                           })
                     ],
                   ),

@@ -1,19 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:pasal/common/widgets/Products/sortable/sortable_products.dart';
 import 'package:pasal/common/widgets/appbar/appbar.dart';
+import 'package:pasal/common/widgets/brands/brand_cards.dart';
 import 'package:pasal/utils/constants/sizes.dart';
 
-class AllProducts extends StatelessWidget {
-  const AllProducts({super.key});
+class BrandProducts extends StatelessWidget {
+  const BrandProducts({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      appBar: PAppBar(title: Text('Popular Products'), showBackArrow: true),
+      appBar: PAppBar(title: Text('Nike')),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(PSizes.defaultSpace),
-          child: PSortableProducts(),
+          child: Column(
+            children: [
+              PBrandCard(showBorder: true),
+              SizedBox(height: PSizes.spaceBtnSections),
+              PSortableProducts(),
+            ],
+          ),
         ),
       ),
     );
