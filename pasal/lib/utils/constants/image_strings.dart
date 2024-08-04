@@ -57,6 +57,7 @@ class PImages {
       "assets/images/products/promo-banner-2.png";
   static const String promoBanner3 =
       "assets/images/products/promo-banner-3.png";
+  static const String promoBanner4 = "assets/images/products/banner_3.jpg";
 
   // User Profile Image
   static const String user = "assets/images/user/user.png";

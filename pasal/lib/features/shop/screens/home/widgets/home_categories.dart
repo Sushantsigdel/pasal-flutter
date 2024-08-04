@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:pasal/common/widgets/image_text_widgets/vertical_image_text.dart';
 import 'package:pasal/common/widgets/texts/section_heading.dart';
+import 'package:pasal/features/shop/screens/sub_category/sub_categories.dart';
 import 'package:pasal/utils/constants/colors.dart';
 import 'package:pasal/utils/constants/image_strings.dart';
 import 'package:pasal/utils/constants/sizes.dart';
@@ -34,7 +36,7 @@ class PHomeCategories extends StatelessWidget {
                     return PVerticalImageText(
                       image: PImages.shoeIcon,
                       title: 'Shoes',
-                      onTap: () {},
+                      onTap: () => Get.to(() => const SubCategoriesScreen()),
                     );
                   }),
             ),
