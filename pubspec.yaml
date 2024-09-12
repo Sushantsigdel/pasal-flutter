@@ -33,7 +33,7 @@ dependencies:
 
 # Product Specific
   readmore: ^3.0.0
-  carousel_slider: ^4.2.1
+  carousel_slider: ^5.0.0
 
 
 dev_dependencies:
